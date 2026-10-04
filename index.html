@@ -4,12 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>Dr. Luiz Belota | Cartão Digital</title>
+<meta name="description" content="Dr. Luiz Belota — Médico | Performance em Saúde. Emagrecimento, metabolismo, performance e longevidade em Manaus e por telemedicina.">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="canonical" href="https://drluizbelota.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23000%22/><text x=%2232%22 y=%2241%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2226%22 font-weight=%22700%22 fill=%22%23C6FF00%22>LB</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drluizbelota.com/">
+<meta property="og:title" content="Dr. Luiz Belota | Performance em Saúde">
+<meta property="og:description" content="Emagrecimento • Metabolismo • Performance • Longevidade">
+<title>Dr. Luiz Belota | Performance em Saúde</title>
 <style>
 :root{--bg:#000;--panel:#111;--lime:#C6FF00;--text:#fff;--muted:#A9A9A9}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(198,255,0,.12),transparent 28%),#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{width:min(100%,520px);margin:auto;padding:34px 18px 42px}
+.wrap{width:min(100%,520px);margin:auto;padding:34px 18px max(42px,env(safe-area-inset-bottom))}
+@media (min-width:700px){.wrap{padding-top:48px}}
 .logo{width:72%;max-width:330px;display:block;margin:0 auto 24px}
 .identity{text-align:center}
 .identity h1{font-size:26px;letter-spacing:.16em;margin:0 0 7px;font-weight:800}
@@ -19,10 +30,13 @@ body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(198,255,0,.12),
 .tags{font-size:14px;color:#d8d8d8;line-height:1.65;text-align:center}
 .tags b{color:var(--lime)}
 .actions{display:grid;gap:12px;margin-top:24px}
-.btn{display:flex;align-items:center;gap:13px;min-height:74px;padding:14px 16px;border-radius:18px;text-decoration:none;color:#fff;background:linear-gradient(180deg,#171717,#0d0d0d);border:1px solid rgba(198,255,0,.72)}
+.btn{display:flex;align-items:center;gap:13px;min-height:74px;padding:14px 16px;border-radius:18px;text-decoration:none;color:#fff;background:linear-gradient(180deg,#171717,#0d0d0d);border:1px solid rgba(198,255,0,.62);transition:transform .16s ease,border-color .16s ease,background .16s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.035)}
+.btn:active{transform:scale(.985)}
+.btn:focus-visible,.share:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+@media (hover:hover){.btn:hover{border-color:var(--lime);transform:translateY(-1px)}}
 .btn.primary{background:var(--lime);color:#000;border-color:var(--lime);box-shadow:0 10px 34px rgba(198,255,0,.12)}
 .ico{width:42px;min-width:42px;display:grid;place-items:center;border-right:1px solid currentColor;padding-right:13px}
-.ico svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .copy{flex:1}
 .copy strong{display:block;font-size:15px;letter-spacing:.12em}
 .copy small{display:block;font-size:14px;margin-top:4px;color:#cfcfcf}
@@ -37,7 +51,9 @@ body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(198,255,0,.12),
 .qr-box img{width:100%;height:100%;display:block}
 .qr-label{font-size:14px;letter-spacing:.16em;color:var(--lime);font-weight:800}
 .qr-help{font-size:13px;color:#c9c9c9;margin-top:7px;line-height:1.4}
-.share{margin-top:18px;width:100%;padding:13px 16px;border-radius:14px;border:1px solid #343434;background:#0e0e0e;color:#fff;font-size:14px;font-weight:700}
+.share{margin-top:18px;width:100%;padding:14px 16px;border-radius:14px;border:1px solid #343434;background:#0e0e0e;color:#fff;font-size:14px;font-weight:750;letter-spacing:.05em;cursor:pointer;transition:transform .16s ease,border-color .16s ease}
+.share:active{transform:scale(.985)}
+@media (hover:hover){.share:hover{border-color:var(--lime)}}
 .footer{margin-top:30px;padding-top:20px;border-top:1px solid #303030;text-align:center}
 .footer strong{font-size:12px;letter-spacing:.22em}
 .footer div{font-size:12px;color:#9f9f9f;margin-top:7px}
@@ -55,20 +71,20 @@ body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(198,255,0,.12),
 </section>
 
 <section class="actions">
-<a class="btn primary" href="https://wa.me/message/ZGCVZUHHNKN5I1" target="_blank" rel="noopener">
-<div class="ico">✆</div><div class="copy"><strong>AGENDAR CONSULTA</strong><small>WhatsApp • (92) 98805-5931</small></div><div class="arrow">›</div>
+<a class="btn primary" aria-label="Agendar consulta pelo WhatsApp" href="https://wa.me/message/ZGCVZUHHNKN5I1" target="_blank" rel="noopener noreferrer">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.61 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.28 1.73.49 2.63.61A2 2 0 0 1 22 16.92z"/></svg></div><div class="copy"><strong>AGENDAR CONSULTA</strong><small>WhatsApp • (92) 98805-5931</small></div><div class="arrow">›</div>
 </a>
-<a class="btn" href="https://www.instagram.com/drluizbelota/" target="_blank" rel="noopener">
-<div class="ico">◎</div><div class="copy"><strong>INSTAGRAM</strong><small>@drluizbelota</small></div><div class="arrow">›</div>
+<a class="btn" aria-label="Abrir Instagram do Dr. Luiz Belota" href="https://www.instagram.com/drluizbelota/" target="_blank" rel="noopener noreferrer">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".7" fill="currentColor" stroke="none"/></svg></div><div class="copy"><strong>INSTAGRAM</strong><small>@drluizbelota</small></div><div class="arrow">›</div>
 </a>
-<a class="btn" href="mailto:drluizbelota@gmail.com">
-<div class="ico">✉</div><div class="copy"><strong>E-MAIL</strong><small>drluizbelota@gmail.com</small></div><div class="arrow">›</div>
+<a class="btn" aria-label="Enviar e-mail para Dr. Luiz Belota" href="mailto:drluizbelota@gmail.com">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div class="copy"><strong>E-MAIL</strong><small>drluizbelota@gmail.com</small></div><div class="arrow">›</div>
 </a>
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Ed.%20SKYe%20Platinum%20Offices%2C%20Avenida%20Doutor%20Theom%C3%A1rio%20Pinto%20da%20Costa%2C%20811%2C%20Sala%201608%2C%20Chapada%2C%20Manaus%20-%20AM%2C%20CEP%2069050-055" target="_blank" rel="noopener">
-<div class="ico">⌖</div><div class="copy"><strong>LOCALIZAÇÃO</strong><small>Ver consultório no mapa</small></div><div class="arrow">›</div>
+<a class="btn" aria-label="Abrir localização do consultório no mapa" href="https://www.google.com/maps/search/?api=1&query=Ed.%20SKYe%20Platinum%20Offices%2C%20Avenida%20Doutor%20Theom%C3%A1rio%20Pinto%20da%20Costa%2C%20811%2C%20Sala%201608%2C%20Chapada%2C%20Manaus%20-%20AM%2C%20CEP%2069050-055" target="_blank" rel="noopener">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div class="copy"><strong>LOCALIZAÇÃO</strong><small>Ver consultório no mapa</small></div><div class="arrow">›</div>
 </a>
-<a class="btn" href="Dr_Luiz_Belota.vcf" download>
-<div class="ico">＋</div><div class="copy"><strong>SALVAR CONTATO</strong><small>Adicionar à agenda</small></div><div class="arrow">›</div>
+<a class="btn" aria-label="Salvar contato do Dr. Luiz Belota" href="/Dr_Luiz_Belota.vcf" download>
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></div><div class="copy"><strong>SALVAR CONTATO</strong><small>Adicionar à agenda</small></div><div class="arrow">›</div>
 </a>
 </section>
 
@@ -91,6 +107,7 @@ CEP: 69.050-055
 <footer class="footer">
 <strong>BELOTA SERVIÇOS MÉDICOS</strong>
 <div>Atendimento presencial em Manaus • Telemedicina</div>
+<div style="margin-top:9px;color:#727272">drluizbelota.com</div>
 </footer>
 </main>
 
