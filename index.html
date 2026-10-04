@@ -83,6 +83,12 @@ body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(198,255,0,.12),
 <a class="btn" aria-label="Abrir localização do consultório no mapa" href="https://www.google.com/maps/search/?api=1&query=Ed.%20SKYe%20Platinum%20Offices%2C%20Avenida%20Doutor%20Theom%C3%A1rio%20Pinto%20da%20Costa%2C%20811%2C%20Sala%201608%2C%20Chapada%2C%20Manaus%20-%20AM%2C%20CEP%2069050-055" target="_blank" rel="noopener">
 <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div class="copy"><strong>LOCALIZAÇÃO</strong><small>Ver consultório no mapa</small></div><div class="arrow">›</div>
 </a>
+<a class="btn" aria-label="Avaliar a Belota Serviços Médicos no Google" href="/avaliar">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.75 5.57 6.15.9-4.45 4.34 1.05 6.13L12 17.05l-5.5 2.89 1.05-6.13L3.1 9.47l6.15-.9L12 3z"/></svg></div><div class="copy"><strong>AVALIAR NO GOOGLE</strong><small>Compartilhe sua experiência</small></div><div class="arrow">›</div>
+</a>
+<a class="btn" aria-label="Abrir Currículo Lattes do Dr. Luiz Belota" href="/lattes">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4M9 12h6M9 16h6M9 8h2"/></svg></div><div class="copy"><strong>CURRÍCULO LATTES</strong><small>Formação e produção acadêmica</small></div><div class="arrow">›</div>
+</a>
 <a class="btn" aria-label="Salvar contato do Dr. Luiz Belota" href="/Dr_Luiz_Belota.vcf" download>
 <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></div><div class="copy"><strong>SALVAR CONTATO</strong><small>Adicionar à agenda</small></div><div class="arrow">›</div>
 </a>
@@ -113,7 +119,7 @@ CEP: 69.050-055
 
 <script>
 async function shareCard(){
-  const data={title:'Dr. Luiz Belota',text:'Cartão digital do Dr. Luiz Belota',url:window.location.href};
+  const data={title:'Dr. Luiz Belota',text:'Cartão digital do Dr. Luiz Belota',url:'https://drluizbelota.com/'};
   if(navigator.share){try{await navigator.share(data)}catch(e){}}
   else{navigator.clipboard.writeText(window.location.href);alert('Link copiado.');}
 }
